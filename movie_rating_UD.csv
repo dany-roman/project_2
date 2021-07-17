@@ -1,4 +1,4 @@
-id,title,budget,revenue,profit,rating
+movieid,title,budget,revenue,profit,rating
 862,Toy Story,30000000.0,373554033.0,343554033.0,3.5989304812834226
 8844,Jumanji,65000000.0,262797249.0,197797249.0,3.7601626016260163
 15602,Grumpier Old Men,0.0,0.0,0.0,
