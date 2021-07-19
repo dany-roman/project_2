@@ -20,8 +20,7 @@ DROP TABLE movie_genres;
 
 CREATE TABLE movie_genres(
 	movieid INT PRIMARY KEY,
-	genres VARCHAR,
-	vote_average INT
+	genre VARCHAR
 );
 
 SELECT * FROM movie_genres;
