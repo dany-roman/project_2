@@ -1,10 +1,10 @@
 ## **Project: MovieLens Database** 
 
-**GitHub: **https://github.com/dany-roman/project_2
+<b>GitHub:</b>&emsp;https://github.com/dany-roman/project_2
 
-**Team:** Dany, Iryna, Ulises, Revathi
+**Team:** &emsp;Dany, Iryna, Ulises, Revathi
 
-**Project Description:** Creating a MovieLens database using python, PostgreSQL, and a smaller selection of data.
+**Project Description:**&emsp; Creating a MovieLens database using python, PostgreSQL, and a smaller selection of data.
 
 
 
@@ -34,16 +34,18 @@ The MovieLens dataset was downloaded and stored in a Data folder of the Project 
 
 #### *Transform*
 
-Ratings timestamp was converted to a date. Unnecessary columns, such as “adult”, “status”, “video” were removed to reduce data file size. Various columns, such as the keywords in the keywords.csv file or production data in the movies_metadata.csv, were stored as a JSON and parsed out. Budget data was merged with the movie titles. 
-Profit for each movie was calculated in the rating dataset, along with the average rate from several users on 9,000 movies
+- Ratings timestamp was converted to a date. 
+- Unnecessary columns, such as “adult”, “status”, “video” were removed to reduce data file size. 
+- Various columns, such as the keywords in the keywords.csv file or production data in the movies_metadata.csv, were stored as a JSON and parsed out. 
+- Budget data was merged with the movie titles. 
+- Profit for each movie was calculated in the rating dataset, along with the average rate from several users on 9,000 movies.
+- Duplicate rows were identified and dropped across multiple tables. We have additionally removed rows which contained non-integer movieids.  
 
 #### *Load*
 
 All final data frames were exported to a postgreSQL database. 
 
-
-
-##### **ERD diagram**
+### DB design:
 
 ERD diagram was designed using [QuickDBD (quickdatabasediagrams.com)](https://app.quickdatabasediagrams.com/#/) online tool and represented one-to-many relationship between the following tables on primary key column - movieid:
 
